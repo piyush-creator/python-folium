@@ -47,7 +47,7 @@ fgp.add_child(folium.GeoJson(data =(open('world.json', 'r', encoding = 'utf-8-si
 style_function=lambda x:{'fillColor':'green' if x['properties']['POP2005'] < 1000000
 else 'orange' if x['properties']['POP2005'] < 2000000 else 'red'}))
 
-
+print('Hello World')
 
 map.add_child(fg_air)
 map.add_child(fg_pop)
